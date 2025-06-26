@@ -2,24 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Calculadora de Año de Nacimiento</title>
+  <title>Verificación de acceso</title>
   <script>
-    window.onload = function() {
-      const añoActual = new Date().getFullYear();
+    let usuario = prompt("Nombre de usuario:");
+    let contraseña = prompt("Contraseña:");
 
-      const edad = parseInt(prompt("¿Cuál es tu edad actual?"), 10);
-
-      if (isNaN(edad) || edad <= 0) {
-        alert("Por favor, ingresa una edad válida.");
-      } else {
-        const añoNacimiento = añoActual - edad;
-
-        alert(`Si tienes ${edad} años, entonces naciste aproximadamente en ${añoNacimiento}.`);
-      }
-    };
+    if (usuario === "admin" && contraseña === "1234") {
+      alert("Acceso permitido");
+    } else {
+      alert("Acceso denegado");
+    }
   </script>
 </head>
 <body>
-  <h1>Calculadora de Año de Nacimiento</h1>
 </body>
 </html>
