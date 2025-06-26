@@ -2,22 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Verificación de Acceso</title>
+  <title>Verificación de acceso</title>
   <script>
-    window.onload = function() {
-      const usuario = prompt("Ingresa tu nombre de usuario:");
+    let usuario = prompt("Nombre de usuario:");
+    let contraseña = prompt("Contraseña:");
 
-      const contrasena = prompt("Ingresa tu contraseña:");
-
-      if (usuario === "admin" && contrasena === "1234") {
-        alert("Acceso permitido.");
-      } else {
-        alert("Acceso denegado.");
-      }
-    };
+    if (usuario === "admin" && contraseña === "1234") {
+      alert("Acceso permitido");
+    } else {
+      alert("Acceso denegado");
+    }
   </script>
 </head>
 <body>
-  <h1>Inicio de sesión</h1>
 </body>
 </html>
