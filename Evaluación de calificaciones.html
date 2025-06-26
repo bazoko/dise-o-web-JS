@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación de Calificaciones</title>
+  <script>
+    window.onload = function() {
+      const calificacion = parseInt(prompt("Ingresa tu calificación entre 0 y 100:"), 10);
+
+      if (isNaN(calificacion) || calificacion < 0 || calificacion > 100) {
+        alert("Por favor, ingresa una calificación válida entre 0 y 100.");
+      } else {
+        if (calificacion >= 90) {
+          alert("Excelente");
+        } else if (calificacion >= 70) {
+          alert("Bueno");
+        } else if (calificacion >= 60) {
+          alert("Suficiente");
+        } else {
+          alert("Insuficiente");
+        }
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Evaluación de Calificaciones</h1>
+</body>
+</html>

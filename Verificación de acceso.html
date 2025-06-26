@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificación de Acceso</title>
+  <script>
+    window.onload = function() {
+      const usuario = prompt("Ingresa tu nombre de usuario:");
+
+      const contrasena = prompt("Ingresa tu contraseña:");
+
+      if (usuario === "admin" && contrasena === "1234") {
+        alert("Acceso permitido.");
+      } else {
+        alert("Acceso denegado.");
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Inicio de sesión</h1>
+</body>
+</html>
