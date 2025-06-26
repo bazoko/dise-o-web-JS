@@ -2,23 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bienvenida</title>
+  <title>Saludo Personalizado</title>
   <script>
- window.onload = function() {
-     const nombre = prompt("¿Cuál es tu nombre completo?");
-     const ciudad = prompt("¿En qué ciudad vives?");
-         alert("¡Bienvenido/a, " + nombre + "!");
-      
+    let nombre = prompt("¿Cuál es tu nombre completo?");
+    alert("¡Bienvenido, " + nombre + "!");
 
-      alert("Vives en: " + ciudad);
-      
-    
-      console.log("Nombre completo: " + nombre);
-      console.log("Ciudad de residencia: " + ciudad);
-    };
+    let ciudad = prompt("¿En qué ciudad vives?");
+    alert("Vives en " + ciudad + ".");
+
+    console.log("Nombre completo: " + nombre);
+    console.log("Ciudad de residencia: " + ciudad);
   </script>
 </head>
 <body>
-  <h1>Página de Bienvenida</h1>
 </body>
 </html>
