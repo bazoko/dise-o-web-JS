@@ -2,30 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Etapa de la vida</title>
+  <title>Categoría de edad</title>
   <script>
-    window.onload = function() {
-      const edad = parseInt(prompt("¿Cuántos años tienes?"), 10);
+    let edad = prompt("¿Cuál es tu edad?");
 
-      if (isNaN(edad)) {
-        alert("Por favor, ingresa un número válido.");
-      } else {
-        if (edad < 6) {
-          alert("Primera infancia");
-        } else if (edad >= 6 && edad <= 12) {
-          alert("Infancia");
-        } else if (edad >= 13 && edad <= 17) {
-          alert("Adolescencia");
-        } else if (edad >= 18 && edad <= 64) {
-          alert("Adultez");
-        } else {
-          alert("Adulto mayor");
-        }
-      }
-    };
+    if (edad < 6) {
+      alert("Primera infancia");
+    } else if (edad >= 6 && edad <= 12) {
+      alert("Infancia");
+    } else if (edad >= 13 && edad <= 17) {
+      alert("Adolescencia");
+    } else if (edad >= 18 && edad <= 64) {
+      alert("Adultez");
+    } else if (edad >= 65) {
+      alert("Adulto mayor");
+    } else {
+      alert("Edad no válida");
+    }
   </script>
 </head>
 <body>
-  <h1>Evaluación de etapa de la vida</h1>
 </body>
 </html>
